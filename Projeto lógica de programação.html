@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Busca pelo conhecimento</title>
+</head>
+<body>
+    <script>
+        alert("A Busca pelo conhecimento");
+        alert("Isso é uma história fictícia");
+
+        alert("Você é um historiador/aventureiro em busca de um lendário Amuleto, que se diz conceder o poder da imortalidade àquele que o possui. Após anos de pesquisa, você finalmente encontra uma pista: uma profecia mencionando que Cronos, rei dos titãs, pai dos deuses e senhor do tempo, o escondeu no Monte Etna, junto a Tifão.");
+
+        // Função para obter informações do jogador
+        function getPlayerInfo() {
+            let jogadorNome = prompt("Digite seu nome:");
+            let jogadorIdade = parseInt(prompt("Digite sua idade:"));
+            let jogadorDano = parseInt(prompt("Distribua seus pontos entre vida e dano (0 a 200):"));
+            let jogadorVida = 200 - jogadorDano; // Calcula a vida baseado no dano escolhido pelo jogador
+            
+            // Validação do dano e da vida do jogador
+            if (isNaN(jogadorDano) || jogadorDano < 0 || jogadorDano > 200 || jogadorVida < 1) {
+                alert("A quantidade de pontos para o dano deve ser um número entre 0 e 200, e a vida restante deve ser positiva. Reinicie o jogo.");
+                return null; // Retorna null se a validação falhar
+            }
+
+            return {
+                nome: jogadorNome,
+                idade: jogadorIdade,
+                dano: jogadorDano,
+                vida: jogadorVida
+            };
+        }
+
+        let playerInfo = getPlayerInfo();
+
+        // Exibindo informações do jogador
+        alert("Jogador:\nNome: " + playerInfo.nome + "\nIdade: " + playerInfo.idade + "\nPontos de Dano: " + playerInfo.dano + "\nPontos de Vida: " + playerInfo.vida);
+        alert("Boa sorte, aproveite o game");
+
+        alert(
+            "Você chega à província de Catânia, na Itália, situada bem próxima do monte (que é um vulcão), onde os moradores locais falam sobre os perigos do Monte Etna desde que Tifão foi aprisionado lá. Você decide falar com o Ancião da cidade em busca de orientação."
+        );
+
+        alert("O que você pergunta a ele??");
+        let acao = prompt(
+            "A = Perguntar sobre a história do monte Etna, B = Oferecer ajuda em troca de informações"
+        ).toUpperCase();
+
+        if (acao == "A") {
+            
+            alert("(Ancião): Por que eu deveria te contar algo????");
+            alert("(Você): Bom... porque posso te pagar (não é possível que esse véio me enrolou)");
+            alert("(Ancião): Pois bem, garoto.");
+
+            alert(
+                "Te contarei a história para poupar fadiga, pois sei que não voltarás. Não faz muito tempo, quando os deuses caminhavam pela Terra entre os mortais, pouco depois da titanomaquia, havia paz, mas também ódio. O sentimento de fúria fervia entre os titãs, a ira contra os deuses e seus escravos, os mortais. Como manifestação dessa fúria, Gaia, junto à personificação do Tártaro, gerou Tifão, o pior dos titãs, o mais poderoso monstro, criado com o único intuito de se vingar dos deuses. Sua fúria desencadeou tormentas, terremotos e vulcões em sua busca implacável por vingança. Nem mesmo Zeus, o rei dos deuses, pôde conter completamente sua ira. Após uma batalha titânica, os deuses emergiram vitoriosos e aprisionaram Tifão sob o Monte Etna. E assim, o Monte Etna tornou-se um lembrete, um aviso constante do poder que reside nas profundezas da Terra... "
+            );
+            
+            alert("(Você): Mas isso eu já sei, meu querido. Diga-me algo novo.");
+            alert("(Ancião): Pois bem, garoto. Naquela época circulavam lendas sobre Cronos ter retornado ao nosso mundo. Diziam que, em um ato de desespero, ele escondeu no coração do Monte Etna, junto a Tifão, um amuleto que continha a essência do antigo deus do sol, Hélio. Esse amuleto proporcionaria a imortalidade aos mortais, mas para um outro deus ou titã não passaria de um simples acessório.");
+            alert("(Você): Você fala como se estivesse lá...");
+            alert("(Ancião): Ah...(um suspiro de cansaço)  tem muito tempo isso, já não tenho mais certeza de onde estive...");
+
+            alert(
+                "(Ancião): 'Por que queres jogar tua vida fora naquele lugar? A imortalidade não é algo que nos pertença. Deixe para os deuses, rapaz'"
+            );
+
+            alert(
+                "(Você): Você diz que a imortalidade é somente para os deuses. Eu digo que nós merecemos a imortalidade. Imagine quanta sabedoria iríamos adquirir com o tempo. Finalmente, alcançaríamos a plenitude como espécie; seríamos superiores."
+            );
+
+            alert("(Ancião): Então você quer saber tudo? Ver tudo?");
+            
+            alert("(Você): Sim... Tenho fome de conhecimento.");
+            
+            alert("(Ancião): Tome cuidado com essa fome, garoto.");
+            
+            alert("(Você): Por que eu deveria ter cuidado com o desejo de saber mais?");
+            
+            alert("(Ancião): Muitos vieram com desejos atrás desse amuleto, mas nenhum retornou.");
+            
+            alert("(Você): Eu serei diferente. Sei disso. Adeus... (começa a caminhar em direção ao monte).");
+            
+            alert("(Ancião): Adeus, garoto.");
+
+            alert("Caminhando em direção ao monte, o céu já escuro, você escuta barulhos estranhos. Para completar, decide entrar naquela floresta nada convidativa bem à sua frente.");
+            
+            alert("Você se vê perdido, sem rumo.");
+
+            alert("Quando então você vê uma silhueta alta e negra, grunhindo e vindo em sua direção.");
+
+            alert("Então pensa: 'Bem que o velho me avisou'.");
+
+            alert("Você vê uma besta raivosa, com aparência de dragão, mas não um simples dragão. Parecia ter mais de uma cabeça...");
+
+            alert("('É a Hidra', você pensa.)");
+
+            alert("E então a besta o ataca, arrancando seu braço esquerdo.");
+
+            alert("Você, sem pensar, começa a correr.");
+
+            alert("Mas não adianta, a Hidra vem até você e o ataca.");
+
+            alert("Em seus últimos suspiros, você pensa: Onde minha busca pelo conhecimento me trouxe? Meu desejo de ver o fim me levou exatamente onde queria... ao fim.");
+
+            alert("Lamento pelo fim de sua busca.");
+
+            alert("Mas faz o seguinte.");
+
+            alert("Tenta de novo, vai");
+            
+        } else if (acao == "B") {
+            alert("Aceito sua ajuda, tenho que pegar lenha. As noites são frias aqui. Pegue aquele machado e me siga. (você ganha 10 pontos de influência)");
+            playerInfo.influencia += 10;
+            
+            alert("(Ancião): Por que você quer tanto a imortalidade, garoto?");
+            alert("(Você): Você não entenderia...");
+            alert("(Ancião): E por que não?");
+            alert("(Você): Meu corpo se arrepia só de imaginar quanto conhecimento eu teria se pudesse ver nossa história como humanidade até o seu fim.");
+            alert("(Ancião): Então é isso que você quer? Ver o nosso fim? Olhe em volta, garoto. Você já está vendo...");
+            alert("Vocês pegam a lenha e levam até a casa do ancião");
+            alert("(Ancião): Obrigado pela ajuda, garoto. Eis tua informação: para alcançar o coração do monte, precisará sacrificar algo que amas, 'uma alma por uma alma', meu velho costumava dizer.");
+            alert("(Você): Obrigado pela informação(o que isso quer dizer????). Nem perguntei teu nome.");
+            alert("(Ancião): Pode me chamar de Nereu, garoto. Agora se apresse, você não quer estar aqui ao anoitecer..."); 
+            alert("(Você): O que acontece ao anoitecer?");
+            alert("(Nereu): As bestas aparecem...");
+            alert("(Você): Que bestas???(Nereu fecha porta)");
+
+            alert("Você fica pensativo com o que o velho Nereu falou. (Você não quer estar aqui ao anoitecer...).");
+
+            alert("(Você): Acho melhor me abrigar e ir pela manhã. Caminhando pela província, você encontra um estábulo aparentemente vazio.");
+
+            alert("Adentrando o estábulo, percebe que está sozinho. (Você): Vou descansar um pouco. Tenho a impressão de que amanhã o dia será longo...");
+
+            alert("Você acorda no meio da noite sentindo muito frio.(Bem que Nereu falou que faz bastante frio aqui), pensa, enquanto escuta alguns ruídos vindo do lado de fora. Olhando pelas frestas da porta, você vê a silhueta de algo bem alto. Que tipo de animal é esse?, você pensa.");
+
+            alert("Mas prestando mais atenção, percebe-se que não é um mero animal.");
+
+            alert("(Você): Essa coisa parece um dragão...");
+
+            alert("(Você): Pera, isso tem mais de uma cabeça????");
+
+            alert("(Você): Pelos deuses, seria a hidra??");
+
+            alert("(Você): Sempre soube que os mitos eram reais. Mais um motivo para ir atrás do amuleto.");
+
+            alert("(Você): Quem diria, Nereu estava falando a verdade (você pensa).");
+
+            alert("Você pega no sono depois de um tempo. Logo pelo amanhecer, é acordado pelos raios de sol entrando pelas frestas da madeira do estábulo.");
+            
+            alert("Está na hora, né? (pensa). Logo parte em direção ao monte.");
+
+            alert("Se depara com uma floresta no caminho. Mas você enxerga tudo tranquilamente graças à luz do dia.");
+
+            alert("Você decide avançar pela floresta, seguindo uma trilha estreita que parece ser pouco usada. O ambiente está calmo e sereno, e você sente uma leve brisa que traz consigo o cheiro de pinheiros e musgo. Enquanto avança pela floresta, você nota que o terreno começa a ficar mais acidentado, com rochas e raízes salientes pelo caminho de forma irregular. Instintivamente, decide investigar mais de perto, e ao fazer isso, nota fios finos e quase invisíveis estendidos entre os galhos. Esses fios parecem estar conectados a algo, talvez uma armadilha mais elaborada.");
+
+            alert("(Você): Isso parece ser uma armadilha com gatilho...");
+
+            alert("Você olha ao redor e percebe que os fios estão amarrados a uma árvore e, se você cair nessa armadilha, a árvore cairá sobre você.");
+            
+            // Função para simular a armadilha
+            function simularArmadilha() {
+                // Gera um número aleatório entre 0 e 1
+                const chance = Math.random();
+            
+                // 80% de chance de escapar
+                if (chance <= 0.8) {
+                    alert("Você conseguiu escapar da armadilha a tempo!");
+                    
+                    alert("Você se sente aliviado por ter evitado um destino desastroso.");
+            
+                    alert("Após se recuperar do susto, você decide continuar sua jornada em direção ao Monte Etna.");
+            
+                    alert("No caminho após a armadilha, você encontra um esqueleto que muito provavelmente morreu ao tentar escapar. Junto ao esqueleto, você encontra uma espada grega antiga e decide levá-la consigo, pois sabe que será necessária.");
+            
+                    alert("À medida que você avança pela floresta, a paisagem ao seu redor começa a mudar. O terreno fica mais íngreme e as árvores parecem se inclinar para o céu, como se estivessem se curvando diante de uma força invisível. O ar está impregnado com um cheiro acre de enxofre, e você pode sentir o calor emanando do Monte Etna à medida que se aproxima. Finalmente, emerge da floresta e se depara com o Monte Etna, cujo cume está envolto em nuvens de fumaça e cinzas.");
+            
+                    alert("Sem hesitar, você começa a escalar a encosta do vulcão, enfrentando o terreno difícil e as condições adversas. À medida que se aproxima do topo, pode sentir a intensidade do calor aumentando e ouvir o rugido distante do fogo que queima nas profundezas do vulcão.");
+                     
+                    alert("Finalmente, você alcança o cume do Monte Etna e se depara com um inimigo: uma Quimera, uma criatura com cabeça de leão, corpo de cabra e cauda de serpente. Seus olhos faiscam enquanto ela rosna, exalando um hálito de fogo que parece incendiar o ar ao redor. A fera se ergue imponente, pronta para desferir um ataque mortal a qualquer momento, desafiando corajosamente qualquer intruso que se atreva a invadir seu território no Monte Etna.");
+            
+                    // Início do sistema de batalha
+                    let opcaoBatalha = prompt("A Quimera parte para te atacar! O que você quer fazer?\nA = Atacar com espada\nB = Defender").toUpperCase();
+            
+                    if (opcaoBatalha == "A") {
+                        // Ataque do jogador
+                        let danoQuimera = Math.floor(Math.random() * 30) + 10; // Dano do monstro entre 10 e 40
+                        let danoJogador = Math.floor(Math.random() * playerInfo.dano) + 1; // Dano do jogador entre 1 e o dano total do jogador
+                        
+                        // Exibindo resultados do ataque
+                        alert("Você ataca a Quimera e causa " + danoJogador + " de dano!");
+                        alert("a Quimera contra-ataca e causa " + danoQuimera + " de dano!");
+                        
+                        // Reduzindo pontos de vida do jogador e da Quimera
+                        playerInfo.vida -= danoQuimera;
+                        alert("Sua vida restante: " + playerInfo.vida);
+                        
+                        if (playerInfo.vida <= 0) {
+                            alert("Você foi derrotado!!!");
+                            alert("Em seus últimos suspiros, você pensa: 'Então é aqui que minha busca acaba?'");
+                        } else {
+                            alert("você atinge o coração da criatura, fazendo-a recuar com um rugido de dor. Ferida e enfraquecida, a Quimera finalmente sucumbe, desaparecendo na fumaça e nas chamas do Monte Etna.");
+                          
+                            alert("Exausto, mas triunfante, você contempla a cena diante de si. Com a Quimera derrotada, o caminho para o coração do vulcão se abre diante de você.");
+                             
+                            alert("Você então caminha em direção ao amuleto, mas quando o vê de perto, se depara com um anel com uma pedra brilhante.");
+            
+                            alert("Você pega e pensa: será isso o amuleto?");
+            
+                            alert("Você o coloca em seu dedo e, a princípio, não sente nada.");
+            
+                            alert(
+                                "Logo pensa: então tudo isso foi em vão... começa a gritar de ódio, joga sua espada para longe e começa a descer o monte enquanto reclama pelo caminho inteiro.");
+            
+                            alert("No cume do monte, uma figura misteriosa aparece diante de você: um homem jovem e forte, vestindo roupas adornadas com alguns detalhes de ouro. Você pergunta: 'Quem é você?'");
+                            
+                            alert("(Homem misterioso): Eu sou Hélio, ou pelo menos já fui um dia.");
+            
+                            alert("(Você): Não é possível, então é real?");
+            
+                            alert("(Hélio): Sim, é real. (respira cansado) Acredito que estamos fadados a passar a eternidade juntos.");
+            
+                            alert("A partir desse ponto, você vive no limite, absorvendo conhecimento, experimentando tudo, e se relacionando com pessoas por anos. Mas o mundo perde o encanto. Todos estão mortos, a natureza foi destruída. Só resta você e Hélio, sempre calado. Um dia, você admite: 'Cometi um erro terrível.' Hélio responde: 'Eu sei, garoto.' Você promete devolver o anel no Monte Etna. Hélio concorda. Você retorna à província de Catânia e encontra Nereu, uma figura familiar. Ele diz: 'Bem-vindo de volta, garoto.' Você se surpreende e pergunta se ele é o velho Nereu. Ele confirma. Caminhando juntos rumo ao monte, você devolve o anel, encerrando sua jornada.");
+            
+                            alert("Ao devolver o anel no Monte Etna, uma sensação de alívio e cansaço o consome.");
+            
+                            alert("Você sente um peso sendo retirado de seus ombros e sabe que não há mais um lugar neste mundo para você.");
+
+                            alert("Você se despede do mundo e de todo conhecimento que adquiriu...");
+            
+                            alert("Espero que tenha gostado da história. Adeus.");
+                        }
+                    } else if (opcaoBatalha == "B") {
+                        alert("Você decide se defender, preparando-se para o ataque da Quimera.");
+            
+                        let danoQuimera = Math.floor(Math.random() * 30) + 10; // Dano do monstro entre 10 e 40
+            
+                        // Exibindo resultado do ataque da Quimera
+                        alert("A Quimera ataca, causando " + danoQuimera + " de dano!");
+                        
+                        // Reduzindo pontos de vida do jogador
+                        playerInfo.vida -= danoQuimera;
+            
+                        if (playerInfo.vida <= 0) {
+                            alert("Você foi derrotado!!!");
+                            alert("Em seus últimos suspiros, você pensa: 'Então é aqui que minha busca acaba?'");
+                        } else {
+                            alert("Você foi derrotado!!!");
+                            alert("Em seus últimos suspiros, você pensa: 'Então é aqui que minha busca acaba?'");
+                        }
+                    } else {
+                        alert("Opção inválida! Você perdeu a chance de agir e a Quimera aproveitou para atacar!");
+                        let danoQuimera = Math.floor(Math.random() * 30) + 10; // Dano do monstro entre 10 e 40
+                        alert("A Quimera ataca, causando " + danoQuimera + " de dano!");
+                        
+                        // Reduzindo pontos de vida do jogador
+                        playerInfo.vida -= danoQuimera;
+            
+                        if (playerInfo.vida <= 0) {
+                            alert("Você foi derrotado!!!");
+                            alert("Em seus últimos suspiros, você pensa: 'Então é aqui que minha busca acaba?'");
+                        } else {
+                            alert("Você foi derrotado!!!");
+                            alert("Em seus últimos suspiros, você pensa: 'Então é aqui que minha busca acaba?'");
+                        }
+                    }
+                } else {
+                    alert("Você ativou a armadilha e uma árvore cai sobre você, causando danos graves!");
+                    playerInfo.vida -= 50; // Reduz a vida do jogador em 50 pontos
+                    
+                    if (playerInfo.vida <= 0) {
+                        alert("Você foi esmagado pela árvore e morreu!");
+                    } else {
+                        alert("Você sobrevive à armadilha, mas fica gravemente ferido.");
+                        alert("Sua vida restante: " + playerInfo.vida);
+                        alert("Apesar dos ferimentos, você decide continuar sua jornada em direção ao Monte Etna.");
+                    }
+                }
+            }
+            
+            // Chamada da função para simular a armadilha
+            simularArmadilha();
+        } else {
+            alert("Opção inválida! Reinicie o jogo.");
+        }
+    </script>
+</body>
+</html>
